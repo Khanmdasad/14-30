@@ -1,0 +1,287 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+
+:root {
+    --wrapper-background: #F7F4FF;
+    --bg-container-card: black;
+    --container-color: #FFFFFF;
+    --text-color: #281A51;
+    --input-border: #DBD5EC; 
+    --furniture-card: #FFECEC;
+    --property-card: #F7ECFF;
+    --job-card: #ECF0FF;
+    --travel-card: #D7F9F3;
+    --boat-card: #E2FFD4;
+    --mc-card: #FFFFFF;
+    --economy-card: #FFF3C9;
+    --holiday-card: #FFD9C9;
+}
+
+body {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: 'Poppins';
+    height: 100vh;
+}
+
+// wrapper start
+.wrapper {
+    background: var(--wrapper-background);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+
+   
+    // bg-contianer ends
+
+
+    // container start
+    .container {
+        padding: 50px;
+        background: var(--container-color);
+        border-radius: 10px;
+        display: flex;
+        justify-content: center;
+        gap: 50px;
+
+        // content start
+        .content {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            gap: 15px;
+
+            // upper start
+            .upper-div {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: row;
+
+                // search start
+                .search{
+                    position: relative;
+                    padding: 10px;
+
+                    img{
+                        position: absolute;
+                        top: 22px;
+                        left: 18px;
+                    }
+                    input {
+                        width: 320px;
+                        padding: 16px 25px 16px 35px;
+                        display: flex;
+                        align-items: center;
+                        border: 1px solid gray;
+                        border-radius: 4px;
+                        border: 1px solid var(--input-border);
+                    }
+                }
+                // search ends
+
+                // // btn start
+                .btn {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    padding: 12px;
+                    gap: 10px;
+                    border: none;
+                    border-radius: 10px;
+                    background: var(--text-color);
+                    color: var(--container-color);
+                }
+                // btn ends
+            }
+
+            // upper ends
+
+            // mid start
+            .mid {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: row;
+                flex-wrap: wrap;
+                gap: 15px;
+                
+                // flex-wrap: wrap;
+
+
+                // box 1 start
+                .box1 {
+                    padding: 20px 25px;
+                    background: var(--furniture-card);
+                    border-radius: 20px;
+                    display: inline-flex;
+                    justify-content: center;
+                    align-items: center;
+                    flex-direction: column;
+                    cursor: pointer;
+                    
+                    p{
+                        color: var(--text-color);
+                        font-family: 'Poppins';
+                        font-size: 16px;
+                        font-style: normal;
+                        font-weight: 500;
+                        line-height: normal;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        width: 70px
+                    }
+                }
+                // box 1 ends
+
+                // box2 start
+                .box2{
+                    padding: 20px 25px;
+                    background: var(--property-card);
+                    border-radius: 20px;
+                    display: inline-flex;
+                    justify-content: center;
+                    align-items: center;
+                    flex-direction: column;
+                    cursor: pointer;
+
+                    p{
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        width: 70px
+                    }
+                }
+                // box2 ends
+
+                // box 3 start
+                .box3{
+                    padding: 20px 25px;
+                    background: var(--job-card);
+                    border-radius: 20px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    flex-direction: column;
+                    cursor: pointer;
+
+                    p{
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        width: 70px
+                    }
+                }
+                // box 3 end
+
+                // box 4 start
+                .box4{
+                    padding: 20px 25px;
+                    background: var(--travel-card);
+                    border-radius: 20px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    flex-direction: column;
+                    cursor: pointer;
+                   
+                    p{
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        width: 70px
+                    }
+                }
+                // box 4 end
+
+                // box 5 start
+                .box5{
+                    padding: 20px 25px;
+                    background: var(--boat-card);
+                    border-radius: 20px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    flex-direction: column;
+                    cursor: pointer;
+
+                    p{
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        width: 70px
+                    }
+                }
+                // box 5 ends
+
+                // box 6 start
+                .box6{
+                    padding: 20px 25px;
+                    background: var(--mc-card);
+                    border-radius: 20px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    flex-direction: column;
+                    cursor: pointer;
+
+                    p{
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        width: 70px
+                    }
+                }
+                // box 6 end
+
+                // box 7 start
+                .box7{
+                    padding: 20px 25px;
+                    background: var(--economy-card);
+                    border-radius: 20px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    flex-direction: column;
+                    cursor: pointer;
+
+                    p{
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        width: 70px
+                    }
+                }
+                // box7 ends
+
+                // box 8 start
+                .box8{
+                    padding: 20px 25px;
+                    background: var(--furniture-card);
+                    border-radius: 20px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    flex-direction: column;
+                    cursor: pointer;
+
+                    p{
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        width: 70px
+                    }
+                }
+                // box8 ends
+            }
+            // mid ends
+        }
+        // content ends
+    }
+    // container ends
+}
